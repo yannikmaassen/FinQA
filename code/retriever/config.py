@@ -49,8 +49,8 @@ class parameters():
     n_best_size = 20
     dropout_rate = 0.1
 
-    batch_size = 64
-    batch_size_test = 64
+    batch_size = 16
+    batch_size_test = 16
     epoch = 10
     learning_rate = 2e-5
 
