@@ -27,13 +27,13 @@ class parameters():
     # train, test, or private
     # private: for testing private test data
     device = "cuda"
-    mode = "train"
+    mode = "test"
     resume_model_path = ""
 
     ### to load the trained model in test time
     # saved_model_path = output_path + \
     #    "bert-base-6k_20210427232814/saved_model/loads/3/model.pt"
-    saved_model_path = output_path + "retriever-yannikmaassen/BusinessBERT2-v2-78000-test/saved_model/loads/last/model.pt"
+    saved_model_path = output_path + "retriever-yannikmaassen/BusinessBERT2-v2-78000-test_20251210161847/saved_model/loads/22/model.pt"
     build_summary = False
 
     option = "rand"
