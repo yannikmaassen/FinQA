@@ -112,7 +112,8 @@ def train():
     loss, start_time = 0.0, time.time()
     record_loss = 0.0
 
-    for _ in range(conf.epoch):
+    for epoch in range(conf.epoch):
+        print("Epoch: ", epoch + 1)
         train_iterator.reset()
         for x in train_iterator:
 
