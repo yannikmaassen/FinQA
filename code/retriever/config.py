@@ -51,8 +51,8 @@ class parameters():
 
     batch_size = 16
     batch_size_test = 16
-    epoch = 10
+    epoch = 5
     learning_rate = 2e-5
 
-    report = 300
-    report_loss = 100
+    report = 600
+    report_loss = 200
