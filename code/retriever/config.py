@@ -3,16 +3,15 @@ class parameters():
     prog_name = "retriever"
 
     # set up your own path here
-    root_path = "your_project_path"
-    output_path = "path_to_store_outputs"
-    cache_dir = "path_for_other_cache"
+    root_path = "../../"
+    output_path = "retriever-outputs"
+    cache_dir = "retriever-cache"
 
     # the name of your result folder.
-    model_save_name = "retriever-bert-base-test"
+    model_save_name = "retriever-yannikmaassen/BusinessBERT2-v2-78000-test"
 
     train_file = root_path + "dataset/train.json"
     valid_file = root_path + "dataset/dev.json"
-
     test_file = root_path + "dataset/test.json"
 
     op_list_file = "operation_list.txt"
@@ -20,7 +19,7 @@ class parameters():
 
     # model choice: bert, roberta
     pretrained_model = "bert"
-    model_size = "bert-base-uncased"
+    model_size = "yannikmaassen/BusinessBERT2-v2-78000"
 
     # pretrained_model = "roberta"
     # model_size = "roberta-base"
@@ -32,8 +31,9 @@ class parameters():
     resume_model_path = ""
 
     ### to load the trained model in test time
-    saved_model_path = output_path + \
-        "bert-base-6k_20210427232814/saved_model/loads/3/model.pt"
+    # saved_model_path = output_path + \
+    #    "bert-base-6k_20210427232814/saved_model/loads/3/model.pt"
+    saved_model_path = output_path + "retriever-yannikmaassen/BusinessBERT2-v2-78000-test/saved_model/loads/last/model.pt"
     build_summary = False
 
     option = "rand"
